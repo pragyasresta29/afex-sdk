@@ -2,16 +2,18 @@ package com.lftechnology.afex.sdk.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.sun.istack.internal.NotNull;
+
+/**
+ * @author Pragya Shrestha <pragyashrestha@lftechnology.com>
+ */
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class CorporateClient {
 
     @JsonProperty("AccountNumber")
     private String accountNumber;
-
-    @NotNull
-    @JsonProperty("AccountPrimaryIdentificationExpirationDate")
+    
+    @JsonProperty(value = "AccountPrimaryIdentificationExpirationDate", required = true)
     private String accountPrimaryIdentificationExpirationDate;
 
     @JsonProperty("AccountPrimaryIdentificationIssueDate")
@@ -20,16 +22,13 @@ public class CorporateClient {
     @JsonProperty("AccountPrimaryIdentificationIssuer")
     private String accountPrimaryIdentificationIssuer;
 
-    @NotNull
-    @JsonProperty("AccountPrimaryIdentificationNumber")
+    @JsonProperty(value = "AccountPrimaryIdentificationNumber", required = true)
     private String accountPrimaryIdentificationNumber;
 
-    @NotNull
-    @JsonProperty("AccountPrimaryIdentificationType")
+    @JsonProperty(value = "AccountPrimaryIdentificationType", required = true)
     private String accountPrimaryIdentificationType;
 
-    @NotNull
-    @JsonProperty("BusinessAddress1")
+    @JsonProperty(value = "BusinessAddress1", required = true)
     private String businessAddress1;
 
     @JsonProperty("BusinessAddress2")
@@ -38,30 +37,25 @@ public class CorporateClient {
     @JsonProperty("BusinessAddress3")
     private String businessAddress3;
 
-    @NotNull
-    @JsonProperty("BusinessCity")
+    @JsonProperty(value = "BusinessCity", required = true)
     private String businessCity;
 
-    @NotNull
-    @JsonProperty("businessCountryCode")
+    @JsonProperty(value = "businessCountryCode", required = true)
     private String businessCountryCode;
 
-    @NotNull
-    @JsonProperty("BusinessName")
+    @JsonProperty(value = "BusinessName", required = true)
     private String businessName;
 
     @JsonProperty("BusinessStateRegion")
     private String businessStateRegion;
 
-    @NotNull
-    @JsonProperty("BusinessZip")
+    @JsonProperty(value = "BusinessZip", required = true)
     private String businessZip;
 
     @JsonProperty("Citizenship")
     private String citizenship;
 
-    @NotNull
-    @JsonProperty("CompanyType")
+    @JsonProperty(value = "CompanyType", required = true)
     private String companyType;
 
     @JsonProperty("ContactAddress1")
@@ -73,8 +67,7 @@ public class CorporateClient {
     @JsonProperty("ContactAddress3")
     private String contactAddress3;
 
-    @NotNull
-    @JsonProperty("ContactBusinessPhone")
+    @JsonProperty(value = "ContactBusinessPhone", required = true)
     private String contactBusinessPhone;
 
     @JsonProperty("ContactCity")
@@ -116,12 +109,10 @@ public class CorporateClient {
     @JsonProperty("ExpectedMonthlyVolume")
     private String expectedMonthlyVolume;
 
-    @NotNull
-    @JsonProperty("FirstName")
+    @JsonProperty(value = "FirstName", required = true)
     private String firstName;
 
-    @NotNull
-    @JsonProperty("Gender")
+    @JsonProperty(value = "Gender", required = true)
     private String gender;
 
     @JsonProperty("Image")
@@ -133,8 +124,7 @@ public class CorporateClient {
     @JsonProperty("JobTitle")
     private String jobTitle;
 
-    @NotNull
-    @JsonProperty("LastName")
+    @JsonProperty(value = "LastName", required = true)
     private String lastName;
 
     @JsonProperty("MiddleName")
@@ -146,8 +136,7 @@ public class CorporateClient {
     @JsonProperty("NumberOfEmployees")
     private String numberOfEmployees;
 
-    @NotNull
-    @JsonProperty("PrimaryEmailAddress")
+    @JsonProperty(value = "PrimaryEmailAddress", required = true)
     private String primaryEmailAddress;
 
     @JsonProperty("SecondaryIdentificationExpirationDate")
@@ -171,8 +160,7 @@ public class CorporateClient {
     @JsonProperty("TaxIdentificationNumber")
     private String taxIdentificationNumber;
 
-    @NotNull
-    @JsonProperty("TermsAndConditions")
+    @JsonProperty(value = "TermsAndConditions", required = true)
     private String termsAndConditions;
 
     @JsonProperty("TickerSymbol")

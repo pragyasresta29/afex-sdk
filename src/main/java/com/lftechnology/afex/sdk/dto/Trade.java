@@ -2,7 +2,10 @@ package com.lftechnology.afex.sdk.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.sun.istack.internal.NotNull;
+
+/**
+ * @author Pragya Shrestha <pragyashrestha@lftechnology.com>
+ */
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Trade {
@@ -10,8 +13,7 @@ public class Trade {
     @JsonProperty("AccountNumber")
     private String accountNumber;
 
-    @NotNull
-    @JsonProperty("Amount")
+    @JsonProperty(value = "Amount", required = true)
     private String amount;
 
     @JsonProperty("IsAmountSettlement")
@@ -29,16 +31,14 @@ public class Trade {
     @JsonProperty("QuoteID")
     private String quoteID;
 
-    @NotNull
-    @JsonProperty("SettlementCcy")
+    @JsonProperty(value = "SettlementCcy", required = true)
     private String settlementCcy;
 
-    @NotNull
-    @JsonProperty("TradeCcy")
+    @JsonProperty(value = "TradeCcy", required = true)
     private String tradeCcy;
 
-    @NotNull
-    @JsonProperty("ValueDate")
+
+    @JsonProperty(value = "ValueDate", required = true)
     private String valueDate;
 
     @JsonProperty("VendorId")

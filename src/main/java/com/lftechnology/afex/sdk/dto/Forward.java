@@ -2,12 +2,14 @@ package com.lftechnology.afex.sdk.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.sun.istack.internal.NotNull;
+
+/**
+ * @author Pragya Shrestha <pragyashrestha@lftechnology.com>
+ */
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Forward {
 
-    @NotNull
     @JsonProperty("Amount")
     private String amount;
 
@@ -23,20 +25,16 @@ public class Forward {
     @JsonProperty("QuoteId")
     private String quoteId;
 
-    @NotNull
-    @JsonProperty("SettlementCcy")
+    @JsonProperty(value = "SettlementCcy", required = true)
     private String settlementCcy;
 
-    @NotNull
-    @JsonProperty("TradeCcy")
+    @JsonProperty(value = "TradeCcy", required = true)
     private String tradeCcy;
 
-    @NotNull
-    @JsonProperty("OptionDate")
+    @JsonProperty(value = "OptionDate", required = true)
     private String optionDate;
 
-    @NotNull
-    @JsonProperty("ValueDate")
+    @JsonProperty(value = "ValueDate", required = true)
     private String valueDate;
 
     public String getAmount() {

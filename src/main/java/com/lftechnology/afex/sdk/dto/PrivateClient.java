@@ -2,17 +2,18 @@ package com.lftechnology.afex.sdk.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.sun.istack.internal.NotNull;
+
+/**
+ * @author Pragya Shrestha <pragyashrestha@lftechnology.com>
+ */
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class PrivateClient {
 
-    @NotNull
-    @JsonProperty("Citizenship")
+    @JsonProperty(value = "Citizenship", required = true)
     private String citizenship;
 
-    @NotNull
-    @JsonProperty("ContactAddress1")
+    @JsonProperty(value = "ContactAddress1", required = true)
     private String contactAddress1;
 
     @JsonProperty("ContactAddress2")
@@ -21,41 +22,34 @@ public class PrivateClient {
     @JsonProperty("ContactAddress3")
     private String contactAddress3;
 
-    @NotNull
-    @JsonProperty("ContactZip")
+    @JsonProperty(value = "ContactZip", required = true)
     private String contactZip;
 
-    @NotNull
-    @JsonProperty("ContactCity")
+    @JsonProperty(value = "ContactCity", required = true)
     private String contactCity;
 
     @JsonProperty("ContactStateRegion")
     private String contactStateRegion;
 
-    @NotNull
-    @JsonProperty("ContactCountryCode")
+    @JsonProperty(value = "ContactCountryCode", required = true)
     private String contactCountryCode;
 
     @JsonProperty("ContactPhone")
     private String contactPhone;
 
-    @NotNull
-    @JsonProperty("ContactPrimaryIdentificationExpiryDate")
+    @JsonProperty(value = "ContactPrimaryIdentificationExpiryDate", required = true)
     private String contactPrimaryIdentificationExpiryDate;
 
     @JsonProperty("ContactPrimaryIdentificationIssuingAgency")
     private String contactPrimaryIdentificationIssuingAgency;
 
-    @NotNull
-    @JsonProperty("ContactPrimaryIdentificationNumber")
+    @JsonProperty(value = "ContactPrimaryIdentificationNumber", required = true)
     private String contactPrimaryIdentificationNumber;
 
-    @NotNull
-    @JsonProperty("ContactPrimaryIdentificationType")
+    @JsonProperty(value = "ContactPrimaryIdentificationType", required = true)
     private String contactPrimaryIdentificationType;
 
-    @NotNull
-    @JsonProperty("DateOfBirth")
+    @JsonProperty(value = "DateOfBirth", required = true)
     private String dateOfBirth;
 
     @JsonProperty("ExpectedMonthlyVolume")
@@ -64,20 +58,16 @@ public class PrivateClient {
     @JsonProperty("ExpectedMonthlyPayments")
     private String expectedMonthlyPayments;
 
-    @NotNull
-    @JsonProperty("FirstName")
+    @JsonProperty(value = "FirstName", required = true)
     private String firstName;
 
-    @NotNull
-    @JsonProperty("Gender")
+    @JsonProperty(value = "Gender", required = true)
     private String gender;
 
-    @NotNull
-    @JsonProperty("Image")
+    @JsonProperty(value = "Image", required = true)
     private String image;
 
-    @NotNull
-    @JsonProperty("ImageType")
+    @JsonProperty(value = "ImageType", required = true)
     private String imageType;
 
     @JsonProperty("JobTitle")
@@ -86,8 +76,7 @@ public class PrivateClient {
     @JsonProperty("LastName")
     private String lastName;
 
-    @NotNull
-    @JsonProperty("MiddleName")
+    @JsonProperty(value = "MiddleName", required = true)
     private String middleName;
 
     @JsonProperty("PrimaryEmailAddress")
@@ -96,8 +85,7 @@ public class PrivateClient {
     @JsonProperty("TaxIdentificationNumber")
     private String taxIdentificationNumber;
 
-    @NotNull
-    @JsonProperty("TermsAndConditions")
+    @JsonProperty(value = "TermsAndConditions", required = true)
     private String termsAndConditions;
 
     public String getCitizenship() {

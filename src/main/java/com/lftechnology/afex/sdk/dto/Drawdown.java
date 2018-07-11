@@ -2,34 +2,34 @@ package com.lftechnology.afex.sdk.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.sun.istack.internal.NotNull;
+
+/**
+ * @author Pragya Shrestha <pragyashrestha@lftechnology.com>
+ */
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Drawdown {
 
-    @NotNull
-    @JsonProperty("Amount")
+    
+    @JsonProperty(value = "Amount", required = true)
     private String amount;
 
     @JsonProperty("AccountNumber")
     private String accountNumber;
-
-    @NotNull
-    @JsonProperty("Currency")
+    
+    @JsonProperty(value = "Currency", required = true)
     private String currency;
-
-    @NotNull
-    @JsonProperty("ForwardNumber")
+    
+    @JsonProperty(value = "ForwardNumber", required = true)
     private String forwardNumber;
 
     @JsonProperty("POPCode")
     private String popCode;
-
-    @NotNull
+    
     @JsonProperty("PurposeOfPayment")
     private String purposeOfPayment;
 
-    @JsonProperty("ValueDate")
+    @JsonProperty(value = "ValueDate", required = true)
     private String valueDate;
 
     @JsonProperty("VendorId")

@@ -3,6 +3,10 @@ package com.lftechnology.afex.sdk.dto;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * @author Pragya Shrestha <pragyashrestha@lftechnology.com>
+ */
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Beneficiary {
 

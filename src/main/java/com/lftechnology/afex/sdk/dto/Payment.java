@@ -2,31 +2,30 @@ package com.lftechnology.afex.sdk.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.sun.istack.internal.NotNull;
+
+/**
+ * @author Pragya Shrestha <pragyashrestha@lftechnology.com>
+ */
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Payment {
 
-    @NotNull
-    @JsonProperty("Amount")
+    @JsonProperty(value = "Amount", required = true)
     private String amount;
 
-    @NotNull
-    @JsonProperty("Currency")
+    @JsonProperty(value = "Currency", required = true)
     private String currency;
 
-    @NotNull
-    @JsonProperty("PaymentDate")
+    @JsonProperty(value = "PaymentDate", required = true)
     private String paymentDate;
 
     @JsonProperty("PopCode")
     private String popCode;
 
-    @NotNull
     @JsonProperty("PurposeOfPayment")
     private String purposeOfPayment;
 
-    @JsonProperty("VendorId")
+    @JsonProperty(value = "VendorId", required = true)
     private String vendorId;
 
     public String getAmount() {
