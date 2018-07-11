@@ -1,0 +1,13 @@
+com/lftechnology/afex/sdk/dto/Forward.class
+com/lftechnology/afex/sdk/dto/Drawdown.class
+com/lftechnology/afex/sdk/dto/Payment.class
+com/lftechnology/afex/sdk/dto/Beneficiary.class
+com/lftechnology/afex/sdk/dto/CountryCode.class
+com/lftechnology/afex/sdk/dto/Trade.class
+com/lftechnology/afex/sdk/dto/BankRequest.class
+com/lftechnology/afex/sdk/dto/RegionRequest.class
+com/lftechnology/afex/sdk/dto/Authorization.class
+com/lftechnology/afex/sdk/dto/CorporateClient.class
+com/lftechnology/afex/sdk/dto/Fees.class
+com/lftechnology/afex/sdk/dto/BeneficiaryBankRequest.class
+com/lftechnology/afex/sdk/dto/PrivateClient.class
