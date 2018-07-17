@@ -17,6 +17,13 @@ public class ApiUtil {
         headers.put(ApiConstant.API_KEY, ApiConstant.API_KEY_VALUE);
         return headers;
     }
+
+    public static Map<String,String> getTokentHeader(){
+        Map<String,String> headers = new HashMap<>();
+        headers.put(ApiConstant.CONTENT_TYPE, ApiConstant.X_WWW_FORM_URLENCODED);
+        return headers;
+    }
+
     public static Headers buildHeader(Map<String,String> headerMap){
         Headers.Builder builder = new Headers.Builder();
         for (Map.Entry<String, String> entry : headerMap.entrySet()) {
