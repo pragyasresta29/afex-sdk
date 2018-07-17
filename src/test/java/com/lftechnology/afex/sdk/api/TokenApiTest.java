@@ -16,22 +16,20 @@ public class TokenApiTest {
     @Rule
     public ExpectedException thrown = ExpectedException.none();
 
-    @Test
+    @Test(expected = ApiException.class)
     public void shouldThrowApiExceptionWhenForInvalidCredentials() {
 
-        TokenApi tokenApi = new TokenApi(this.baseUrl, ApiUtil.getTokentHeader());
+        TokenApi tokenApi = new TokenApi(this.baseUrl, ApiUtil.getTokenHeader());
 
         //Given
         tokenApi.getToken(getInvalidAuthorization());
 
-        //When-Then
-        thrown.expect(ApiException.class);
     }
 
     @Test
     public void testGetToken() {
         //Given
-        TokenApi tokenApi = new TokenApi(this.baseUrl, ApiUtil.getTokentHeader());
+        TokenApi tokenApi = new TokenApi(this.baseUrl, ApiUtil.getTokenHeader());
 
         //When
         TokenResponse token = tokenApi.getToken(getAuthorization());

@@ -18,7 +18,7 @@ public class ApiUtil {
         return headers;
     }
 
-    public static Map<String,String> getTokentHeader(){
+    public static Map<String,String> getTokenHeader(){
         Map<String,String> headers = new HashMap<>();
         headers.put(ApiConstant.CONTENT_TYPE, ApiConstant.X_WWW_FORM_URLENCODED);
         return headers;
