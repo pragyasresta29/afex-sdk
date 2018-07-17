@@ -16,10 +16,10 @@ public class PrivateClient {
     @JsonProperty(value = "ContactAddress1", required = true)
     private String contactAddress1;
 
-    @JsonProperty("ContactAddress2")
+    @JsonProperty(value = "ContactAddress2")
     private String contactAddress2;
 
-    @JsonProperty("ContactAddress3")
+    @JsonProperty(value = "ContactAddress3")
     private String contactAddress3;
 
     @JsonProperty(value = "ContactZip", required = true)
@@ -28,19 +28,19 @@ public class PrivateClient {
     @JsonProperty(value = "ContactCity", required = true)
     private String contactCity;
 
-    @JsonProperty("ContactStateRegion")
+    @JsonProperty(value = "ContactStateRegion")
     private String contactStateRegion;
 
     @JsonProperty(value = "ContactCountryCode", required = true)
     private String contactCountryCode;
 
-    @JsonProperty("ContactPhone")
+    @JsonProperty(value = "ContactPhone")
     private String contactPhone;
 
     @JsonProperty(value = "ContactPrimaryIdentificationExpiryDate", required = true)
     private String contactPrimaryIdentificationExpiryDate;
 
-    @JsonProperty("ContactPrimaryIdentificationIssuingAgency")
+    @JsonProperty(value = "ContactPrimaryIdentificationIssuingAgency")
     private String contactPrimaryIdentificationIssuingAgency;
 
     @JsonProperty(value = "ContactPrimaryIdentificationNumber", required = true)
@@ -52,10 +52,10 @@ public class PrivateClient {
     @JsonProperty(value = "DateOfBirth", required = true)
     private String dateOfBirth;
 
-    @JsonProperty("ExpectedMonthlyVolume")
+    @JsonProperty(value = "ExpectedMonthlyVolume")
     private String expectedMonthlyVolume;
 
-    @JsonProperty("ExpectedMonthlyPayments")
+    @JsonProperty(value = "ExpectedMonthlyPayments")
     private String expectedMonthlyPayments;
 
     @JsonProperty(value = "FirstName", required = true)
@@ -64,25 +64,25 @@ public class PrivateClient {
     @JsonProperty(value = "Gender", required = true)
     private String gender;
 
-    @JsonProperty(value = "Image", required = true)
+    @JsonProperty(value = "Image")
     private String image;
 
     @JsonProperty(value = "ImageType", required = true)
     private String imageType;
 
-    @JsonProperty("JobTitle")
+    @JsonProperty(value = "JobTitle")
     private String jobTitle;
 
-    @JsonProperty("LastName")
+    @JsonProperty(value = "LastName", required = true)
     private String lastName;
 
-    @JsonProperty(value = "MiddleName", required = true)
+    @JsonProperty(value = "MiddleName")
     private String middleName;
 
-    @JsonProperty("PrimaryEmailAddress")
+    @JsonProperty(value = "PrimaryEmailAddress", required = true)
     private String primaryEmailAddress;
 
-    @JsonProperty("TaxIdentificationNumber")
+    @JsonProperty(value = "TaxIdentificationNumber")
     private String taxIdentificationNumber;
 
     @JsonProperty(value = "TermsAndConditions", required = true)

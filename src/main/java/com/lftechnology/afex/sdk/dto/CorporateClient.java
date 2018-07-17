@@ -10,16 +10,16 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class CorporateClient {
 
-    @JsonProperty("AccountNumber")
+    @JsonProperty(value = "AccountNumber")
     private String accountNumber;
     
     @JsonProperty(value = "AccountPrimaryIdentificationExpirationDate", required = true)
     private String accountPrimaryIdentificationExpirationDate;
 
-    @JsonProperty("AccountPrimaryIdentificationIssueDate")
+    @JsonProperty(value = "AccountPrimaryIdentificationIssueDate")
     private String accountPrimaryIdentificationIssueDate;
 
-    @JsonProperty("AccountPrimaryIdentificationIssuer")
+    @JsonProperty(value = "AccountPrimaryIdentificationIssuer")
     private String accountPrimaryIdentificationIssuer;
 
     @JsonProperty(value = "AccountPrimaryIdentificationNumber", required = true)
@@ -31,82 +31,82 @@ public class CorporateClient {
     @JsonProperty(value = "BusinessAddress1", required = true)
     private String businessAddress1;
 
-    @JsonProperty("BusinessAddress2")
+    @JsonProperty(value = "BusinessAddress2")
     private String businessAddress2;
 
-    @JsonProperty("BusinessAddress3")
+    @JsonProperty(value = "BusinessAddress3")
     private String businessAddress3;
 
     @JsonProperty(value = "BusinessCity", required = true)
     private String businessCity;
 
-    @JsonProperty(value = "businessCountryCode", required = true)
+    @JsonProperty(value = "businessCountryCode")
     private String businessCountryCode;
 
     @JsonProperty(value = "BusinessName", required = true)
     private String businessName;
 
-    @JsonProperty("BusinessStateRegion")
+    @JsonProperty(value = "BusinessStateRegion")
     private String businessStateRegion;
 
     @JsonProperty(value = "BusinessZip", required = true)
     private String businessZip;
 
-    @JsonProperty("Citizenship")
+    @JsonProperty(value = "Citizenship")
     private String citizenship;
 
     @JsonProperty(value = "CompanyType", required = true)
     private String companyType;
 
-    @JsonProperty("ContactAddress1")
+    @JsonProperty(value = "ContactAddress1")
     private String contactAddress1;
 
-    @JsonProperty("ContactAddress2")
+    @JsonProperty(value = "ContactAddress2")
     private String contactAddress2;
 
-    @JsonProperty("ContactAddress3")
+    @JsonProperty(value = "ContactAddress3")
     private String contactAddress3;
 
     @JsonProperty(value = "ContactBusinessPhone", required = true)
     private String contactBusinessPhone;
 
-    @JsonProperty("ContactCity")
+    @JsonProperty(value = "ContactCity")
     private String contactCity;
 
-    @JsonProperty("ContactCountryCode")
+    @JsonProperty(value = "ContactCountryCode")
     private String contactCountryCode;
 
-    @JsonProperty("ContactPrimaryIdentificationExpirationDate")
+    @JsonProperty(value = "ContactPrimaryIdentificationExpirationDate")
     private String contactPrimaryIdentificationExpirationDate;
 
-    @JsonProperty("ContactPrimaryIdentificationIssuingAgency")
+    @JsonProperty(value = "ContactPrimaryIdentificationIssuingAgency")
     private String contactPrimaryIdentificationIssuingAgency;
 
-    @JsonProperty("ContactPrimaryIdentificationNumber")
+    @JsonProperty(value = "ContactPrimaryIdentificationNumber")
     private String contactPrimaryIdentificationNumber;
 
-    @JsonProperty("ContactPrimaryIdentificationType")
+    @JsonProperty(value = "ContactPrimaryIdentificationType")
     private String contactPrimaryIdentificationType;
 
-    @JsonProperty("ContactStateRegion")
+    @JsonProperty(value = "ContactStateRegion")
     private String contactStateRegion;
 
-    @JsonProperty("ContactZip")
+    @JsonProperty(value = "ContactZip")
     private String contactZip;
 
-    @JsonProperty("CountryOfIncorporation")
+    @JsonProperty(value = "CountryOfIncorporation")
     private String countryOfIncorporation;
 
-    @JsonProperty("DateOfBirth")
+    @JsonProperty(value = "DateOfBirth")
     private String dateOfBirth;
 
-    @JsonProperty("DateOfIncorporation")
+    @JsonProperty(value = "DateOfIncorporation", required = true)
     private String dateOfIncorporation;
 
-    @JsonProperty("ExpectedMonthlyPayments")
+    @JsonProperty(value = "ExpectedMonthlyPayments")
     private String expectedMonthlyPayments;
 
-    @JsonProperty("ExpectedMonthlyVolume")
+    @JsonProperty(value = "ExpectedMonthlyVolume")
     private String expectedMonthlyVolume;
 
     @JsonProperty(value = "FirstName", required = true)
@@ -115,61 +115,61 @@ public class CorporateClient {
     @JsonProperty(value = "Gender", required = true)
     private String gender;
 
-    @JsonProperty("Image")
+    @JsonProperty(value = "Image")
     private String image;
 
-    @JsonProperty("ImageType")
+    @JsonProperty(value = "ImageType")
     private String imageType;
 
-    @JsonProperty("JobTitle")
+    @JsonProperty(value = "JobTitle")
     private String jobTitle;
 
     @JsonProperty(value = "LastName", required = true)
     private String lastName;
 
-    @JsonProperty("MiddleName")
+    @JsonProperty(value = "MiddleName")
     private String middleName;
 
-    @JsonProperty("NAICS")
+    @JsonProperty(value = "NAICS")
     private String naics;
 
-    @JsonProperty("NumberOfEmployees")
+    @JsonProperty(value = "NumberOfEmployees")
     private String numberOfEmployees;
 
     @JsonProperty(value = "PrimaryEmailAddress", required = true)
     private String primaryEmailAddress;
 
-    @JsonProperty("SecondaryIdentificationExpirationDate")
+    @JsonProperty(value = "SecondaryIdentificationExpirationDate")
     private String secondaryIdentificationExpirationDate;
 
-    @JsonProperty("SecondaryIdentificationIssueDate")
+    @JsonProperty(value = "SecondaryIdentificationIssueDate")
     private String secondaryIdentificationIssueDate;
 
-    @JsonProperty("SecondaryIdentificationIssuer")
+    @JsonProperty(value = "SecondaryIdentificationIssuer")
     private String secondaryIdentificationIssuer;
 
-    @JsonProperty("SecondaryIdentificationNumber")
+    @JsonProperty(value = "SecondaryIdentificationNumber")
     private String secondaryIdentificationNumber;
 
-    @JsonProperty("SecondaryIdentificationType")
+    @JsonProperty(value = "SecondaryIdentificationType")
     private String secondaryIdentificationType;
 
-    @JsonProperty("SubdivisionOfIncorporation")
+    @JsonProperty(value = "SubdivisionOfIncorporation")
     private String subdivisionOfIncorporation;
 
-    @JsonProperty("TaxIdentificationNumber")
+    @JsonProperty(value = "TaxIdentificationNumber")
     private String taxIdentificationNumber;
 
     @JsonProperty(value = "TermsAndConditions", required = true)
     private String termsAndConditions;
 
-    @JsonProperty("TickerSymbol")
+    @JsonProperty(value = "TickerSymbol")
     private String tickerSymbol;
 
-    @JsonProperty("TradeName")
+    @JsonProperty(value = "TradeName")
     private String tradeName;
 
-    @JsonProperty("Website")
+    @JsonProperty(value = "Website")
     private String website;
 
     public String getAccountNumber() {
