@@ -101,7 +101,7 @@ public class Drawdown {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("Drawdown{");
+        final StringBuilder sb = new StringBuilder("Drawdown{");
         sb.append("amount='").append(amount).append('\'');
         sb.append(", accountNumber=").append(accountNumber).append('\'');
         sb.append(", currency=").append(currency).append('\'');

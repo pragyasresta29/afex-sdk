@@ -46,7 +46,7 @@ public class Trade {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("Trade{");
+        final StringBuilder sb = new StringBuilder("Trade{");
         sb.append("accountNumber='").append(accountNumber).append('\'');
         sb.append(", amount='").append(amount).append('\'');
         sb.append(", isAmountSettlement='").append(isAmountSettlement).append('\'');

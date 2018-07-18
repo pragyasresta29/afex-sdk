@@ -298,7 +298,7 @@ public class PrivateClient {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("PrivateClient{");
+        final StringBuilder sb = new StringBuilder("PrivateClient{");
         sb.append("citizenship='").append(citizenship).append('\'');
         sb.append(", contactAddress1=").append(contactAddress1).append('\'');
         sb.append(", contactAddress2=").append(contactAddress2).append('\'');

@@ -606,7 +606,7 @@ public class CorporateClient {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("CorporateClient{");
+        final StringBuilder sb = new StringBuilder("CorporateClient{");
         sb.append("accountNumber='").append(accountNumber).append('\'');
         sb.append("accountPrimaryIdentificationExpirationDate='").append(accountPrimaryIdentificationExpirationDate).append('\'');
         sb.append("accountPrimaryIdentificationIssueDate='").append(accountPrimaryIdentificationIssueDate).append('\'');

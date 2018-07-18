@@ -78,7 +78,7 @@ public class Payment {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("Payment{");
+        final StringBuilder sb = new StringBuilder("Payment{");
         sb.append("amount='").append(amount).append('\'');
         sb.append(", currency=").append(currency).append('\'');
         sb.append(", paymentDate=").append(paymentDate).append('\'');

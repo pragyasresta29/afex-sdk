@@ -45,7 +45,7 @@ public class Authorization {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("Authorization{");
+        final StringBuilder sb = new StringBuilder("Authorization{");
         sb.append("grantType='").append(grantType).append('\'');
         sb.append(", userName=").append(userName).append('\'');
         sb.append(", password=").append(password).append('\'');

@@ -111,7 +111,7 @@ public class Forward {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("Forward{");
+        final StringBuilder sb = new StringBuilder("Forward{");
         sb.append("amount='").append(amount).append('\'');
         sb.append(", accountNumber=").append(accountNumber).append('\'');
         sb.append(", isAmountSettlement=").append(isAmountSettlement).append('\'');

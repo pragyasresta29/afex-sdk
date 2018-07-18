@@ -34,7 +34,7 @@ public class SenderCountry {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("CountryResponse{");
+        final StringBuilder sb = new StringBuilder("CountryResponse{");
         sb.append("countryCode='").append(countryCode).append('\'');
         sb.append(", countryName='").append(countryName).append('\'');
         sb.append('}');

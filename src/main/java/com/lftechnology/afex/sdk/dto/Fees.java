@@ -78,7 +78,7 @@ public class Fees {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("Fees{");
+        final StringBuilder sb = new StringBuilder("Fees{");
         sb.append("amount='").append(amount).append('\'');
         sb.append(", accountNumber='").append(accountNumber).append('\'');
         sb.append(", settlementCcy='").append(settlementCcy).append('\'');

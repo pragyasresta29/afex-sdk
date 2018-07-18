@@ -364,7 +364,7 @@ public class Beneficiary {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("Beneficiary{");
+        final StringBuilder sb = new StringBuilder("Beneficiary{");
         sb.append("bankAccountNumber='").append(bankAccountNumber).append('\'');
         sb.append("bankAddress1='").append(bankAddress1).append('\'');
         sb.append("bankAddress2='").append(bankAddress2).append('\'');

@@ -62,7 +62,7 @@ public class TokenResponse {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("TokenResponse{");
+        final StringBuilder sb = new StringBuilder("TokenResponse{");
         sb.append("accessToken='").append(accessToken).append('\'');
         sb.append(", tokenType='").append(tokenType).append('\'');
         sb.append(", expiresIn='").append(expiresIn).append('\'');

@@ -45,7 +45,7 @@ public class State {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("State{");
+        final StringBuilder sb = new StringBuilder("State{");
         sb.append("id='").append(id).append('\'');
         sb.append(", name='").append(name).append('\'');
         sb.append(", countryCode='").append(countryCode).append('\'');

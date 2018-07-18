@@ -23,7 +23,7 @@ public class AccountStatusResponse {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("AccountStatusResponse{");
+        final StringBuilder sb = new StringBuilder("AccountStatusResponse{");
         sb.append("accountStatus='").append(accountStatus).append('\'');
         sb.append('}');
         return sb.toString();
