@@ -8,10 +8,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  */
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class CountryCode {
+public class SenderCountry {
 
     @JsonProperty("CountryCode")
     private String countryCode;
+
+    @JsonProperty("CountryName")
+    private String countryName;
 
     public String getCountryCode() {
         return countryCode;
@@ -21,10 +24,19 @@ public class CountryCode {
         this.countryCode = countryCode;
     }
 
+    public String getCountryName() {
+        return countryName;
+    }
+
+    public void setCountryName(String countryName) {
+        this.countryName = countryName;
+    }
+
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("CountryCode{");
+        final StringBuffer sb = new StringBuffer("CountryResponse{");
         sb.append("countryCode='").append(countryCode).append('\'');
+        sb.append(", countryName='").append(countryName).append('\'');
         sb.append('}');
         return sb.toString();
     }
