@@ -34,7 +34,7 @@ public class BeneficiaryCountry {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("BeneficiaryCountryResponse{");
+        final StringBuilder sb = new StringBuilder("BeneficiaryCountryResponse{");
         sb.append("code='").append(code).append('\'');
         sb.append(", name='").append(name).append('\'');
         sb.append('}');

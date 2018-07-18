@@ -144,7 +144,7 @@ public class BeneficiaryBank {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("BeneficiaryBank{");
+        final StringBuilder sb = new StringBuilder("BeneficiaryBank{");
         sb.append("nationalIdentifier='").append(nationalIdentifier).append('\'');
         sb.append(", nationalIdType='").append(nationalIdType).append('\'');
         sb.append(", institutionName='").append(institutionName).append('\'');
