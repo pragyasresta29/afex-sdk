@@ -3,6 +3,8 @@ package com.lftechnology.afex.sdk.dto;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.math.BigDecimal;
+
 /**
  * @author Pragya Shrestha <pragyashrestha@lftechnology.com>
  */
@@ -14,13 +16,13 @@ public class ExchangeRate {
      * The indicative rate for the currency trade.
      */
     @JsonProperty("Rate")
-    private Double rate;
+    private BigDecimal rate;
 
     /**
      * The indicative inverted rate for the currency trade.
      */
     @JsonProperty("InvertedRate")
-    private Double invertedRate;
+    private BigDecimal invertedRate;
 
     /**
      * Terms define whether you need to multiply OR divide amounts the by the Rate to calculate the equivalent
@@ -38,19 +40,32 @@ public class ExchangeRate {
     @JsonProperty("Terms")
     private String terms;
 
-    public Double getRate() {
+    @JsonProperty("ValueDate")
+    private String valueDate;
+
+    @JsonProperty("OptionDate")
+    private String optionDate;
+
+    /**
+     *  The unique AFEX identifier for the quote. The QuoteID can be supplied in api/trades/create to fix the rate for
+     *  a trade providing the trade is created before the quote expires.
+     */
+    @JsonProperty("QuoteId")
+    private String quoteId;
+
+    public BigDecimal getRate() {
         return rate;
     }
 
-    public void setRate(Double rate) {
+    public void setRate(BigDecimal rate) {
         this.rate = rate;
     }
 
-    public Double getInvertedRate() {
+    public BigDecimal getInvertedRate() {
         return invertedRate;
     }
 
-    public void setInvertedRate(Double invertedRate) {
+    public void setInvertedRate(BigDecimal invertedRate) {
         this.invertedRate = invertedRate;
     }
 
@@ -62,12 +77,39 @@ public class ExchangeRate {
         this.terms = terms;
     }
 
+    public String getValueDate() {
+        return valueDate;
+    }
+
+    public void setValueDate(String valueDate) {
+        this.valueDate = valueDate;
+    }
+
+    public String getOptionDate() {
+        return optionDate;
+    }
+
+    public void setOptionDate(String optionDate) {
+        this.optionDate = optionDate;
+    }
+
+    public String getQuoteId() {
+        return quoteId;
+    }
+
+    public void setQuoteId(String quoteId) {
+        this.quoteId = quoteId;
+    }
+
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Rate{");
+        final StringBuilder sb = new StringBuilder("ExchangeRate{");
         sb.append("rate=").append(rate);
         sb.append(", invertedRate=").append(invertedRate);
         sb.append(", terms='").append(terms).append('\'');
+        sb.append(", valueDate='").append(valueDate).append('\'');
+        sb.append(", optionDate='").append(optionDate).append('\'');
+        sb.append(", quoteId='").append(quoteId).append('\'');
         sb.append('}');
         return sb.toString();
     }

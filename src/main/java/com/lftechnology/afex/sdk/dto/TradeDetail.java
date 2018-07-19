@@ -27,8 +27,32 @@ public class TradeDetail {
     @JsonProperty("Description")
     private String description;
 
+    @JsonProperty("TradeCcy")
+    private String tradeCurrency;
+
+    @JsonProperty("SettlementCcy")
+    private String settlementCurrency;
+
     @JsonProperty("TradeNumber")
-    private String tradeNumber;
+    private Integer tradeNumber;
+
+    @JsonProperty("Amount")
+    private BigDecimal amount;
+
+    @JsonProperty("RemainingBalance")
+    private BigDecimal remainingBalance;
+
+    @JsonProperty("Rate")
+    private BigDecimal rate;
+
+    @JsonProperty("BeneficiaryName")
+    private String beneficiaryName;
+
+    @JsonProperty("ValueDate")
+    private String valueDate;
+
+    @JsonProperty("Status")
+    private String status;
 
     public BigDecimal getBalance() {
         return balance;
@@ -70,12 +94,76 @@ public class TradeDetail {
         this.description = description;
     }
 
-    public String getTradeNumber() {
+    public String getTradeCurrency() {
+        return tradeCurrency;
+    }
+
+    public void setTradeCurrency(String tradeCurrency) {
+        this.tradeCurrency = tradeCurrency;
+    }
+
+    public String getSettlementCurrency() {
+        return settlementCurrency;
+    }
+
+    public void setSettlementCurrency(String settlementCurrency) {
+        this.settlementCurrency = settlementCurrency;
+    }
+
+    public Integer getTradeNumber() {
         return tradeNumber;
     }
 
-    public void setTradeNumber(String tradeNumber) {
+    public void setTradeNumber(Integer tradeNumber) {
         this.tradeNumber = tradeNumber;
+    }
+
+    public BigDecimal getAmount() {
+        return amount;
+    }
+
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
+    }
+
+    public BigDecimal getRemainingBalance() {
+        return remainingBalance;
+    }
+
+    public void setRemainingBalance(BigDecimal remainingBalance) {
+        this.remainingBalance = remainingBalance;
+    }
+
+    public BigDecimal getRate() {
+        return rate;
+    }
+
+    public void setRate(BigDecimal rate) {
+        this.rate = rate;
+    }
+
+    public String getBeneficiaryName() {
+        return beneficiaryName;
+    }
+
+    public void setBeneficiaryName(String beneficiaryName) {
+        this.beneficiaryName = beneficiaryName;
+    }
+
+    public String getValueDate() {
+        return valueDate;
+    }
+
+    public void setValueDate(String valueDate) {
+        this.valueDate = valueDate;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     @Override
@@ -86,7 +174,15 @@ public class TradeDetail {
         sb.append(", credit='").append(credit).append('\'');
         sb.append(", debit='").append(debit).append('\'');
         sb.append(", description='").append(description).append('\'');
-        sb.append(", tradeNumber='").append(tradeNumber).append('\'');
+        sb.append(", tradeCurrency='").append(tradeCurrency).append('\'');
+        sb.append(", settlementCurrency='").append(settlementCurrency).append('\'');
+        sb.append(", tradeNumber=").append(tradeNumber);
+        sb.append(", amount=").append(amount);
+        sb.append(", remainingBalance=").append(remainingBalance);
+        sb.append(", rate=").append(rate);
+        sb.append(", beneficiaryName='").append(beneficiaryName).append('\'');
+        sb.append(", valueDate='").append(valueDate).append('\'');
+        sb.append(", status='").append(status).append('\'');
         sb.append('}');
         return sb.toString();
     }
