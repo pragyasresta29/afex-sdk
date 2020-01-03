@@ -7,6 +7,7 @@ import com.lftechnology.afex.sdk.dto.Forward;
 import com.lftechnology.afex.sdk.dto.ForwardDetail;
 import com.lftechnology.afex.sdk.service.ExecuteApiService;
 import com.lftechnology.afex.sdk.service.ForwardApiService;
+import com.lftechnology.afex.sdk.service.impl.ExecuteApiImpl;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 
@@ -21,7 +22,7 @@ public class ForwardApi {
 
     private ObjectMapper objectMapper = new ObjectMapper();
 
-    private ExecuteApiService executeApi;
+    private ExecuteApiService executeApi = new ExecuteApiImpl();
 
     public ForwardApi(String baseUrl,Map<String,String> headerMap){
         this.requestApi = new RequestApi(baseUrl,headerMap);

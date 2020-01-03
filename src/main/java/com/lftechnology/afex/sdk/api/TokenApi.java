@@ -5,6 +5,7 @@ import com.lftechnology.afex.sdk.dto.Authorization;
 import com.lftechnology.afex.sdk.dto.TokenResponse;
 import com.lftechnology.afex.sdk.service.ExecuteApiService;
 import com.lftechnology.afex.sdk.service.TokenApiService;
+import com.lftechnology.afex.sdk.service.impl.ExecuteApiImpl;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 
@@ -19,7 +20,7 @@ public class TokenApi {
 
     private ObjectMapper objectMapper = new ObjectMapper();
 
-    private ExecuteApiService executeApi;
+    private ExecuteApiService executeApi = new ExecuteApiImpl();
 
     public TokenApi(String baseUrl,Map<String,String> headerMap){
         this.requestApi = new RequestApi(baseUrl,headerMap);

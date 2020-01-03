@@ -4,5 +4,5 @@ import retrofit2.Call;
 
 public interface ExecuteApiService {
 
-    public  <T> T executeApiCall(Call<T> call);
+    <T> T executeApiCall(Call<T> call);
 }

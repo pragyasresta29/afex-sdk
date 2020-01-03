@@ -7,6 +7,7 @@ import com.lftechnology.afex.sdk.dto.CorporateClient;
 import com.lftechnology.afex.sdk.dto.PrivateClient;
 import com.lftechnology.afex.sdk.service.AccountCreationApiService;
 import com.lftechnology.afex.sdk.service.ExecuteApiService;
+import com.lftechnology.afex.sdk.service.impl.ExecuteApiImpl;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 
@@ -19,7 +20,7 @@ public class AccountCreationApi {
 
     private RequestApi requestApi;
 
-    private ExecuteApiService executeApi;
+    private ExecuteApiService executeApi = new ExecuteApiImpl();
 
     private ObjectMapper objectMapper = new ObjectMapper();
 

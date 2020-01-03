@@ -16,6 +16,7 @@ import com.lftechnology.afex.sdk.dto.ValidationIbanResponse;
 import com.lftechnology.afex.sdk.dto.VostroAccount;
 import com.lftechnology.afex.sdk.service.ExecuteApiService;
 import com.lftechnology.afex.sdk.service.ReferenceDataApiService;
+import com.lftechnology.afex.sdk.service.impl.ExecuteApiImpl;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 
@@ -29,7 +30,7 @@ public class ReferenceDataApi {
 
     private RequestApi requestApi;
 
-    private ExecuteApiService executeApi;
+    private ExecuteApiService executeApi = new ExecuteApiImpl();
 
 //    private ObjectMapper objectMapper = new ObjectMapper();
 
